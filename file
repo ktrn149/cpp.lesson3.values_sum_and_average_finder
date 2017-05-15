@@ -1,0 +1,36 @@
+//
+//  main.cpp
+//  Lesson 3 Coding Practice Lesson Exercise
+//
+//  Created by Steve Snyder on 5/12/17.
+//  Copyright © 2017 Steve Snyder. All rights reserved.
+//
+//  Algorithm
+//
+//  1. Ask the user to enter two integer values
+//  2. Store sum of values in a third variable
+//  3. Store average of values in a fourth variable
+//  4. Test code with various different values
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int entryOne, entryTwo, sumofEntries; // initializes variables for data storage
+    double averageOfEntries;
+
+    cout << "Welcome to the Values Sum and Average Finder! \n"; // introduces program to user
+    cout << "Please enter one integer value and press return: \n"; // prompts user for integer input
+    cin >> entryOne; // user input
+    cout << "Please enter another integer value and press return: \n"; // prompts user for integer input
+    cin >> entryTwo; // user input
+    sumofEntries = (entryOne + entryTwo); // stores sum of the two entered inputs
+    averageOfEntries = (sumofEntries / 2.0); // averages the two entered inputs
+    cout << "The sum of your two values is \n"; // shares results with user
+    cout << sumofEntries; // returns the sum of the two entered inputs
+    cout << " and the average of your two values is \n";
+    cout << averageOfEntries; // returns the average of the two entered inputs
+    cout << ".  Did you guess the answers correctly? \n"; //
+    return 0;
+}
